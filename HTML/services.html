@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Prices</title>
+
+  <link rel="stylesheet" href="../CSS/Secondary.css">
+
+  <style>
+    body{
+      background: gray;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="../IMAGES/Burak,%20Kelly.jpg" alt="Senior" width="460">
+      </div>
+
+      <div class="item">
+        <img src="../IMAGES/Engagement.jpg" alt="Senior" width="460">
+      </div>
+
+      <div class="item">
+        <img src="../IMAGES/IMG_0084.JPG" alt="Senior" width="460">
+      </div>
+
+      <div class="item">
+        <img src="../IMAGES/IMG_5227.jpg" alt="Senior" width="460">
+      </div>
+
+      <div class="item">
+        <img src="../IMAGES/IMG_5253.jpg" alt="Senior" width="460">
+      </div>
+
+      <div class="item">
+        <img src="../IMAGES/Newborn.png" alt="Senior" width="460">
+      </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="tabs">
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="services(event, 'Senior Portraits')">Senior Portraits</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="services(event, 'Pet Portraits')">Pet Portraits</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="services(event, 'Head Shots')">Head Shots</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="services(event, 'Group Portraits')">Group Portraits</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="services(event, 'Engagement Shots')">Engagement Shots</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="services(event, 'Newborn Portraits')">Newborn Portraits</a></li>
+
+</ul>
+
+<div id="Senior Portraits" class="tabcontent">
+  <h3>Senior Portraits</h3>
+  <p>Whether you're graduating from High School or College, we would love to capture your special moment. Each session will last an hour and the amount of photos depends on the efficiency of the session.</p>
+</div>
+
+<div id="Pet Portraits" class="tabcontent">
+  <h3>Pet Portraits</h3>
+  <p>We all know that your pet is your greatest companion and everyone wants to capture their every move. We're here to get the cutest, funniest, most adorable photos of your loved pet. Each session will last an hour and the amount of photos depends on the efficiency of the session.</p>
+</div>
+
+<div id="Head Shots" class="tabcontent">
+  <h3>Head Shots</h3>
+  <p>If you're in need of a professional head shot or even a glamour shot, we're here to help. We specialize in head shots with a common backdrop to focus on the face. We can also capture team roster head shots. Each session will last an hour and the amount of photos depends on the efficiency of the session.</p>
+</div>
+
+<div id="Group Portraits" class="tabcontent">
+  <h3>Group Portraits</h3>
+<p>Friend groups, family photos, homecoming and prom. What every group photos you want, we'd love to capture it. Each session will last an hour and the amount of photos depends on the efficiency of the session.</p>
+</div>
+
+<div id="Engagement Shots" class="tabcontent">
+  <h3>Engagement Shots</h3>
+  <p>Whether you're already engaged or about to get engaged, we're here for you. Pictures to announce your engagement or to capture the special "yes" moment. Each session will last an hour and the amount of photos depends on the efficiency of the session.</p>
+</div>
+
+<div id="Newborn Portraits" class="tabcontent">
+  <h3>Newborn Portraits</h3>
+  <p>We all know how cute and adorable babies are. Capturing their movements and expressions is what we do best. Each session will last an hour and the amount of photos depends on the efficiency of the session.</p>
+</div>
+
+</div>
+
+<script>
+  function services(evt, serviceName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(serviceName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+<ol class="pricesFooter">
+  <li style="float:left"><p class="pricestitle">Erika Reichert Photography</p></li>
+  <div class="priceslinks">
+    <li style="float:right"><a href="connect.html">Connect</a></li>
+    <li style="float:right"><a href="aboutme.html">About Me</a></li>
+    <li style="float:right"><a href="index.html">Home</a></li>
+  </div>
+</ol>
+
+
+</body>
+</html>
